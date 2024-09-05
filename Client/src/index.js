@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {createBrowserRouter, ReactProvider, RouterProvider} from 'react-router-dom';
+import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import Login from './components/auth/Login.jsx';
 import Register from './components/auth/Register.jsx';
+import ForgotPassword from './components/auth/ForgotPassword.jsx';
 
 
 
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path:"register",  
         element:<Register/>
+      },
+      {
+        path:"forgotPassword",
+        element:<ForgotPassword/>
       }
     ]
   }
