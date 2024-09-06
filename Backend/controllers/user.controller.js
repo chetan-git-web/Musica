@@ -1,5 +1,6 @@
-import jwt from 'jsonwebtoken';
+
 import UserModel from '../models/user.model.js';
+import jwt from 'jsonwebtoken';
 export default class UserController{
     signUp(req,res){
     const{name,email,password}=req.body;

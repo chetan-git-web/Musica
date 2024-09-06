@@ -13,5 +13,4 @@ server.get('/',(req,res)=>{
 //port
 server.listen(5000);
 console.log('server is listening on 5000');
-
-
+ 
